@@ -1,0 +1,26 @@
+<configuration>
+    <input>
+        <net-file value="network.net.xml"/>
+        <route-files value="route.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <step-length value="0.02"/>
+        <end value="20000000"/>
+    </time>
+    <processing>
+        <default.action-step-length value="0.2"/>
+        <start value="1"/>
+        <step-method.ballistic value="false"/>
+        <lateral-resolution value="0.05"/>
+        <collision.action value="warn"/>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="0"/>
+    </processing>
+    <report>
+        <verbose value="false"/>
+        <no-warnings value="true"/>
+        <no-step-log value="true"/>
+        <error-log value="sumo_errors.log"/>
+    </report>
+</configuration>

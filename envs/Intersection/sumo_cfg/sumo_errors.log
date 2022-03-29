@@ -1,0 +1,7 @@
+Warning: Action step length '0.20' is used for vehicle type 'egoCar' but step-method.ballistic was not set. This may cause collisions.
+Warning: Action step length '0.20' is used for vehicle type 'aggressive' but step-method.ballistic was not set. This may cause collisions.
+Warning: Action step length '0.20' is used for vehicle type 'defensive' but step-method.ballistic was not set. This may cause collisions.
+Warning: Vehicle 'ego' performs emergency braking with decel=-9.00 wished=5.00 severity=1.00, time=8.82.
+Warning: Vehicle 'ego' performs emergency braking with decel=-9.00 wished=5.00 severity=1.00, time=9.22.
+Warning: Vehicle 'ego' performs emergency braking with decel=-9.00 wished=5.00 severity=1.00, time=9.62.
+Warning: Vehicle 'ego' performs emergency braking with decel=-9.00 wished=5.00 severity=1.00, time=10.22.

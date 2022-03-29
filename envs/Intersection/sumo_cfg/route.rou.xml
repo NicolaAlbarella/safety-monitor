@@ -1,0 +1,14 @@
+<routes>
+    <vType id="egoCar" color="red" accel="2" decel="5" length="5.0" minGap="2.5" maxSpeed="40.0"/>
+    <vTypeDistribution id="vehicledist">
+        <vType id="aggressive" color="orange" accel="2" decel="6.0" length="5.0" minGap="1" tau="0.5" maxSpeed="20.0" sigma="0.5"
+               carFollowModel="IDM" departSpeed="random" speedFactor="normc(1.3, 0.1, 0.2, 2)" probability="0.5"/>
+        <vType id="defensive" color="yellow" accel="2" decel="6.0" length="5.0" minGap="3.0" tau="1.5" maxSpeed="20.0" sigma="0.5"
+               carFollowModel="IDM" departSpeed="random" speedFactor="normc(0.9, 0.1, 0.2, 2)" probability="0.5"/>
+    </vTypeDistribution>
+    <route edges="o1 o2" color="yellow" id="h_route"/>
+    <route edges="v1 v2" color="yellow" id="v_route"/>
+    <flow id="h_cars" begin="0" end="100000000" probability="1" type="vehicledist"
+          route="h_route"/>
+    <vehicle id="ego" type="egoCar" depart="0.00" departLane="0" departPos="1.00" departSpeed="1.00" route="v_route" />
+</routes>
