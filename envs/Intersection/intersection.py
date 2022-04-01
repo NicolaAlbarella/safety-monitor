@@ -148,7 +148,7 @@ class IntersectionEnv(gym.Env):
         ...
 
     def reset_sumo(self, index):
-        c_path = "/home/user/PycharmProjects/LaneChanger_FF/envs/Intersection/sumo_cfg/config.sumocfg"
+        c_path = "envs/Intersection/sumo_cfg/config.sumocfg"
         traci.start(["sumo-gui", "-c", c_path, "--seed", str(index), "--random", str(self.random)], 8873 + index,
                     label='sim' + str(index))
         handle = traci.getConnection('sim' + str(index))
